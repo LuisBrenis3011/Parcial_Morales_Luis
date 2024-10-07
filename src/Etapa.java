@@ -15,4 +15,12 @@ public class Etapa {
     public String getGlosa() {
         return glosa;
     }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setGlosa(String glosa) {
+        this.glosa = glosa;
+    }
 }

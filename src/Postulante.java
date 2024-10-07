@@ -28,10 +28,11 @@ public class Postulante {
         return true;
     }
 
-    public boolean postular(Oferta oferta) {
-        Postulacion postulacion = new Postulacion(oferta, new Date());
+    public boolean postular(Oferta oferta, Etapa etapa) {
+        Postulacion postulacion = new Postulacion(oferta, new Date(), etapa);
         return postulaciones.add(postulacion);
     }
+
 
     public boolean anularPostulacion(Postulacion postulacion) {
         postulacion.setAnulado(true);

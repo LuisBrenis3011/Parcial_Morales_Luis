@@ -1,14 +1,29 @@
 import java.util.Date;
+
 public class Postulacion {
     private Oferta oferta;
     private Date fecha;
     private boolean anulado;
     private Date fechaAnulacion;
+    protected Etapa etapa;
 
-    public Postulacion(Oferta oferta, Date fecha) {
+    public Postulacion(Oferta oferta, Date fecha, Etapa etapa) {
         this.oferta = oferta;
         this.fecha = fecha;
         this.anulado = false;
+        this.etapa = etapa;
+    }
+
+    public void setOferta(Oferta oferta) {
+        this.oferta = oferta;
+    }
+
+    public Etapa getEtapa() {
+        return etapa;
+    }
+
+    public void setEtapa(Etapa etapa) {
+        this.etapa = etapa;
     }
 
     public boolean isAnulado() {
@@ -39,5 +54,3 @@ public class Postulacion {
         this.fecha = fecha;
     }
 }
-
-

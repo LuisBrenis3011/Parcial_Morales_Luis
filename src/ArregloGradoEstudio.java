@@ -1,7 +1,7 @@
 public class ArregloGradoEstudio {
     private int indice;
 
-    public ArregloGradoEstudio(int indice) {
+    public ArregloGradoEstudio() {
         this.indice = indice;
     }
 
