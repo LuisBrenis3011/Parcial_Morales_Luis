@@ -36,6 +36,50 @@ public class Oferta {
     public List<Requisito> getRequisitos() {
         return requisitos;
     }
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+
+    public void setRequisitos(List<Requisito> requisitos) {
+        this.requisitos = requisitos;
+    }
+
+    public Date getFechaTermino() {
+        return fechaTermino;
+    }
+
+    public void setFechaTermino(Date fechaTermino) {
+        this.fechaTermino = fechaTermino;
+    }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }
 
 

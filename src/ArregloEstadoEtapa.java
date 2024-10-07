@@ -1,12 +1,18 @@
-public class ArregloEstadoEtapa {
-    private int indice;
+import java.util.ArrayList;
+import java.util.List;
 
-    public ArregloEstadoEtapa(int indice) {
-        this.indice = indice;
+public class ArregloEstadoEtapa {
+    private List<EstadoEtapa> estadosEtapa;
+
+    public ArregloEstadoEtapa() {
+        this.estadosEtapa = new ArrayList<>();
     }
 
-    public boolean agregar() {
+    public boolean agregar(EstadoEtapa estadoEtapa) {
+        return estadosEtapa.add(estadoEtapa);
+    }
 
-        return false;
+    public List<EstadoEtapa> getEstadosEtapa() {
+        return estadosEtapa;
     }
 }

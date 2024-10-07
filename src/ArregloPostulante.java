@@ -1,18 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class ArregloPostulante {
-    private int indice;
+    private List<Postulante> postulantes;
 
-    public ArregloPostulante(int indice) {
-        this.indice = indice;
+    public ArregloPostulante() {
+        this.postulantes = new ArrayList<>();
     }
 
-    public boolean agregar() {
-
-        return false;
+    public boolean agregar(Postulante postulante) {
+        return postulantes.add(postulante);
     }
 
-    public boolean buscar(String DNI) {
-
-        return false;
+    public Postulante buscar(String DNI) {
+        for (Postulante postulante : postulantes) {
+            if (postulante.getDNI().equals(DNI)) {
+                return postulante;
+            }
+        }
+        return null;
     }
 }
 

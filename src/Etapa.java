@@ -7,4 +7,12 @@ public class Etapa {
         this.fecha = fecha;
         this.glosa = glosa;
     }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public String getGlosa() {
+        return glosa;
+    }
 }
