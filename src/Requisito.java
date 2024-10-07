@@ -3,14 +3,44 @@ public class Requisito {
     private String descripcion;
     private boolean estado;
 
-    public boolean habilitar() {
+    public Requisito(int orden, String descripcion) {
+        this.orden = orden;
+        this.descripcion = descripcion;
+        this.estado = true;
+    }
 
-        return false;
+    public boolean habilitar() {
+        this.estado = true;
+        return true;
     }
 
     public boolean deshabilitar() {
+        this.estado = false;
+        return true;
+    }
 
-        return false;
+    public int getOrden() {
+        return orden;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setOrden(int orden) {
+        this.orden = orden;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }
 
